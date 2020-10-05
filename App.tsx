@@ -59,7 +59,7 @@ const items: Array<IItem> = [
   },
 ]
 
-export default function App (props: Array<IItem>) {
+export default function App () {
   return (
     <Container>
       <Header>
