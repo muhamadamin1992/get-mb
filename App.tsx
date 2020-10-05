@@ -1,8 +1,9 @@
 import React from 'react';
 import { Container, Header, Content, List, Body, Title } from 'native-base';
 import Item from './components/Item';
+import IItem from "./models/item";
 
-const items = [
+const items: Array<IItem> = [
   {
     title: "500 MB",
     price: "10 000 so'm",
@@ -55,7 +56,7 @@ const items = [
   },
 ]
 
-export default function App (props) {
+export default function App (props: Array<IItem>) {
   return (
     <Container>
       <Header>

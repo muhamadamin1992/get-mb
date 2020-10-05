@@ -1,8 +1,9 @@
 import React from 'react';
 import { Linking } from "react-native";
 import { Text, ListItem, Button, Body } from 'native-base';
+import IItem from '../models/item';
 
-export default function Item (props) {
+export default function Item (props: IItem) {
   function handePress() {
     Linking.openURL(props.url);
   }
